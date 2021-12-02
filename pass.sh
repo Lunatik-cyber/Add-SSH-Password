@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Автор : https://github.com/Lunatik-cyber
+# Автор : https://github.com/Lunatik-cyber 
 # Author: https://github.com/Lunatik-cyber
 # Репо. : https://github.com/Lunatik-cyber/password
 # Repo. : https://github.com/Lunatik-cyber/password
