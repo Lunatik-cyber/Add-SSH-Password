@@ -8,7 +8,7 @@
 
 # Проверка на наличие прав для запуска скрипта
 # Checking for permissions to run the script
-[[ $EUID != 0 ]] && echo "Запустите скрипт данной командой: sudo $0" && echo "Run the script with this command: sudo $0" && exit 1
+[[ $EUID != 0 ]] && echo "Запустите скрипт данной командой: sudo bash $0" && echo "Run the script with this command: sudo bash $0" && exit 1
 
 
 # Создание резервной копии файла
