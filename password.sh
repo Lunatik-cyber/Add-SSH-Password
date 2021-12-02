@@ -2,8 +2,8 @@
 
 # Автор : https://github.com/Lunatik-cyber 
 # Author: https://github.com/Lunatik-cyber
-# Репо. : https://github.com/Lunatik-cyber/password
-# Repo. : https://github.com/Lunatik-cyber/password
+# Репо. : https://github.com/Lunatik-cyber/Add-SSH-Password
+# Repo. : https://github.com/Lunatik-cyber/Add-SSH-Password
 
 
 # Проверка на наличие прав для запуска скрипта
