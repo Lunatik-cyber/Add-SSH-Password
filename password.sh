@@ -33,15 +33,20 @@ PasswordAuthentication yes
 clear
 
 if [[ $1 == "-p" ]]; then
+  apt install expect -y
+  clear
   expect<<-END
 spawn passwd root
+expect  "New password: "
 send "${2}\r"
+expect  "Retype new password: "
 send "${2}\r"
 expect eof
 exit
 END
   exit
 fi
+
 
 
 # Добавление текста
