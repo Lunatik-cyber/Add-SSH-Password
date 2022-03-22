@@ -32,6 +32,18 @@ PasswordAuthentication yes
 # Cleaning the terminal
 clear
 
+if [[ $1 == "-p" ]]; then
+  expect<<-END
+spawn passwd root
+send "${2}\r"
+send "${2}\r"
+expect eof
+exit
+END
+  exit
+fi
+
+
 # Добавление текста
 # Adding Text
 echo "Введите пароль, он должен быть невидимый при вводе, не пугайтесь!"
