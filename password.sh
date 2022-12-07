@@ -33,7 +33,7 @@ PasswordAuthentication yes
 clear
 
 if [[ $1 == "-p" ]]; then
-  apt install expect -y
+  apt update; apt install expect -y
   clear
   expect<<-END
 spawn passwd root
